@@ -7,7 +7,7 @@ router.get('/exercise', (req, res) => {
 });
 
 // sends user to stats.html page
-router.get('/exercise', (req, res) => {
+router.get('/stats', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/stats.html'));
 });
 
