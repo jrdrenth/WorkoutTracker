@@ -47,6 +47,6 @@ const workoutSchema = new Schema(
   //,{ collection: 'workouts' }
 );
 
-const Workout = mongoose.model('Workout', workoutSchema, 'workouts');
+const Workout = mongoose.model('Workout', workoutSchema, 'workouts'); // 3rd argument is the name of collection to be created in the DB
 
 module.exports = Workout;

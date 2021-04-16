@@ -106,6 +106,12 @@ let workoutSeed = [
         weight: 300,
         reps: 10,
         sets: 4
+      },
+      {
+        type: "cardio",
+        name: "Bike Riding",
+        duration: 60,
+        distance: 12
       }
     ]
   },
