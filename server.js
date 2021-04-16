@@ -16,8 +16,6 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutdb", {
 });
 
 // Routes
-// The below points our server to a series of "route" files.
-// These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 app.use('/api', require('./controllers/apiRoutes'));
 app.use('/', require('./controllers/htmlRoutes'));
 
