@@ -43,6 +43,7 @@ router.get('/workouts/range', async (req, res) => {
         $set: { totalDuration: { $sum: '$exercises.duration' } }
       }
     ])
+    //.sort({ day: -1 })
     .sort({ _id: -1 })
     .limit(7);
 
