@@ -1,5 +1,5 @@
 {
-  "name": "mongoose_skeleton",
+  "name": "workout-tracker",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -10,8 +10,9 @@
     "seed": "node seeders/seed.js"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.16.3",
     "mongoose": "^5.3.16",
     "morgan": "^1.9.1"
