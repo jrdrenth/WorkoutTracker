@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "3c6587f2-a8eb-4703-92bc-3db7394ab199",
+		"name": "WorkoutTracker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CREATE Workout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"day\": \"2021-04-22T15:30:00.000\",\r\n    \"exercises\": [\r\n        {\r\n            \"type\": \"resistance\",\r\n            \"name\": \"Bicep Curl\",\r\n            \"duration\": 20,\r\n            \"weight\": 100,\r\n            \"reps\": 10,\r\n            \"sets\": 4\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{APP_PROTOCOL}}://{{APP_HOST}}:{{APP_PORT}}/api/workouts/",
+					"protocol": "{{APP_PROTOCOL}}",
+					"host": [
+						"{{APP_HOST}}"
+					],
+					"port": "{{APP_PORT}}",
+					"path": [
+						"api",
+						"workouts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ All Workouts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{APP_PROTOCOL}}://{{APP_HOST}}:{{APP_PORT}}/api/workouts/",
+					"protocol": "{{APP_PROTOCOL}}",
+					"host": [
+						"{{APP_HOST}}"
+					],
+					"port": "{{APP_PORT}}",
+					"path": [
+						"api",
+						"workouts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ Workouts Range",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{APP_PROTOCOL}}://{{APP_HOST}}:{{APP_PORT}}/api/workouts/range",
+					"protocol": "{{APP_PROTOCOL}}",
+					"host": [
+						"{{APP_HOST}}"
+					],
+					"port": "{{APP_PORT}}",
+					"path": [
+						"api",
+						"workouts",
+						"range"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ Workout By Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{APP_PROTOCOL}}://{{APP_HOST}}:{{APP_PORT}}/api/workouts/6081d6e571bdbd28d877eed7",
+					"protocol": "{{APP_PROTOCOL}}",
+					"host": [
+						"{{APP_HOST}}"
+					],
+					"port": "{{APP_PORT}}",
+					"path": [
+						"api",
+						"workouts",
+						"6081d6e571bdbd28d877eed7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE Workout",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"cardio\",\r\n    \"name\": \"Bike Riding\",\r\n    \"duration\": 60,\r\n    \"distance\": 12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{APP_PROTOCOL}}://{{APP_HOST}}:{{APP_PORT}}/api/workouts/6081d6e571bdbd28d877eed7",
+					"protocol": "{{APP_PROTOCOL}}",
+					"host": [
+						"{{APP_HOST}}"
+					],
+					"port": "{{APP_PORT}}",
+					"path": [
+						"api",
+						"workouts",
+						"6081d6e571bdbd28d877eed7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Workout by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{APP_PROTOCOL}}://{{APP_HOST}}:{{APP_PORT}}/api/workouts/6081d6c271bdbd28d877eed4",
+					"protocol": "{{APP_PROTOCOL}}",
+					"host": [
+						"{{APP_HOST}}"
+					],
+					"port": "{{APP_PORT}}",
+					"path": [
+						"api",
+						"workouts",
+						"6081d6c271bdbd28d877eed4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
